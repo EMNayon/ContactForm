@@ -6,35 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/ocon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="wrapper">
         <header>Send us a Message</header>
-        <form action="#">
+        <form action="POST">
             <div class="dbl-field">
                 <div class="field">
-                    <input type="text" placeholder="Enter you name">
+                    <input type="text" name="name" placeholder="Enter you name">
                     <i class="fa fa-user"></i>
                 </div>
                 <div class="field">
-                    <input type="text" placeholder="Enter you email">
+                    <input type="text" name="email" placeholder="Enter you email">
                     <i class="fa fa-envelope"></i>
                 </div>
             </div>
             <div class="dbl-field">
                 <div class="field">
-                    <input type="text" placeholder="Enter you phone">
+                    <input type="text" name="phone" placeholder="Enter you phone">
                     <i class="fa fa-phone"></i>
                 </div>
                 <div class="field">
-                    <input type="text" placeholder="Enter you website">
+                    <input type="text" name="website" placeholder="Enter you website">
                     <i class="fa fa-globe"></i>
                 </div>
             </div>
             <div class="message">
-                <textarea placeholder="Write your message"></textarea>
+                <textarea name="message" placeholder="Write your message"></textarea>
                 <i class="fa fa-comment"></i>
             </div>
             <div class="button-area">
@@ -43,5 +42,6 @@
             </div>
         </form>
     </div>
+    <script src="api/script.js"></script>
 </body>
 </html>
